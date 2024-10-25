@@ -1,3 +1,16 @@
+# ⚠ About this fork
+The original version of pyCombat has the following code in setup.py:
+```python
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+```
+This will cause an error due to encoding issues in non-English versions of Windows, which will cause the library to fail to be installed through pip. The author's original repository is already in the public archive state. For new projects, it is recommended to use the author's new version [InMoose](https://github.com/epigenelabs/inmoose). For old projects that use pyCombat and have not been updated, I created this fork for non-English users.
+
+You can install my fork by pip:
+```shell
+pip install combat@git+https://github.com/XJTU-WXY/pyComBat
+```
+
 # MIGRATION WARNING
 
 pyComBat has been merged into [InMoose](https://github.com/epigenelabs/inmoose), and is no
@@ -10,43 +23,8 @@ pyComBat [1] is a Python 3 implementation of ComBat [2], one of the most widely 
 
 More detailed documentation can be found at [this address](https://epigenelabs.github.io/pyComBat/).
 
-## TO DO
-
-## Minimum dependencies
-
-We list here the versions of the packages that have been used for development/testing of pyComBat, as well as for writing the documentation.
-
-### pyComBat dependencies
-
-* python 3.6
-
-* numpy 1.18.5
-
-* mpmath 1.1.0
-
-* pandas 0.24.2
-
-* patsy 0.5.1
-
-### Documentation
-
-* sphinx 2.1.2
 
 ## Usage example
-
-### Installation
-
-You can install pyComBat directly with:
-
-```python
-pip install combat
-```
-
-You can upgrade pyComBat to its latest version with:
-
-```python
-pip install combat --upgrade
-```
 
 ### Running pyComBat
 
@@ -68,5 +46,61 @@ Please refer to [CONTRIBUTING.md](https://github.com/epigenelabs/pyComBat/blob/m
 ## References
 
 [1] Behdenna A, Haziza J, Azencot CA and Nordor A. (2020) pyComBat, a Python tool for batch effects correction in high-throughput molecular data using empirical Bayes methods. bioRxiv doi: 10.1101/2020.03.17.995431
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
 [2] Johnson W E, et al. (2007) Adjusting batch effects in microarray expression data using empirical Bayes methods. Biostatistics, 8, 118–127
